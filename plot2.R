@@ -20,7 +20,7 @@ library(RCurl)
 plot2 <- function() {
   data <- fetch_data()
 
-  png("plot2.png") # default is 480 X 480
+  png("plot2.png", bg = "transparent") # default is 480 X 480
 
   plot(data$Time, data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 

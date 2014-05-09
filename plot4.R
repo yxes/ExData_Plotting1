@@ -30,7 +30,7 @@ library(RCurl)
 plot4 <- function() {
   data <- fetch_data()
 
-  png("plot4.png") # default is 480 X 480
+  png("plot4.png", bg = "transparent") # default is 480 X 480
 
   par(mfrow = c(2,2))
   with(data, {									   # PLOTS

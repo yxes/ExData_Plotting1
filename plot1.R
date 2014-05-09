@@ -20,7 +20,7 @@ library(RCurl)
 plot1 <- function() {
   data <- fetch_data()
 
-  png("plot1.png") # default is 480 X 480
+  png("plot1.png", bg = "transparent") # default is 480 X 480
   
   hist(data$Global_active_power, 
        main = "Global Active Power", 

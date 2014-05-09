@@ -26,7 +26,7 @@ library(RCurl)
 plot3 <- function() {
   data <- fetch_data()
 
-  png("plot3.png") # default is 480 X 480
+  png("plot3.png", bg = "transparent") # default is 480 X 480
 
   plot(data$Time, data$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
     points(data$Time, data$Sub_metering_2, type="l", col="red")
